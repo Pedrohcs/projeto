@@ -6,3 +6,5 @@ Projeto destinado a seleção de vaga de estágio na Buzzlead
 * npm install http-server -g
 
 * http-server
+
+* acessar localhost:8080
