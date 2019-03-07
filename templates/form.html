@@ -1,0 +1,29 @@
+<form ng-submit="submit()">
+    <input type="text" placeholder="Nome da rua" required autofocus ng-model="address">
+    <button type="submit" ng-click="submit()">Pesquisar</button>
+</form>
+<table>
+    <tr>
+        <th>CEP</th>
+        <th>Logradouro</th>
+        <th>Complemento</th>
+        <th>Bairro</th>
+        <th>Localidade</th>
+        <th>UF</th>
+        <th>Unidade</th>
+        <th>IBGE</th>
+        <th>GIA</th>
+    </tr>
+    <tr ng-repeat="value in resposta">
+        <td>{{value.cep}}</td>
+        <td>{{value.logradouro}}</td>
+        <td>{{value.complemento}}</td>
+        <td>{{value.bairro}}</td>
+        <td>{{value.localidade}}</td>
+        <td>{{value.uf}}</td>
+        <td>{{value.unidade}}</td>
+        <td>{{value.ibge}}</td>
+        <td>{{value.gia}}</td>
+    </tr>
+</table>
+
